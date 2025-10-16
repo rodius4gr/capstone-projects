@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1>Contact me</h1>
+        <h3><a href="mailto:stelioskaragiannidis@gmail.com">Send email</a></h3>
+        <p>stelioskaragiannidis@gmail.com</p>
+    </header>
+
+    <main>
+     <article>
+    <fieldset>
+        <legend>Contact form</legend>
+        <form action="/sendData" method="GET">
+            <label for="txtName">Full Name:</label>
+            <input type="text" id="txtName" name="name" minlength="3" maxlength="40" size="40" required>
+            (*)
+            <br>
+            <label for="txtEmail">E-mail: </label>
+            <input type="email" id="txtEmail" name="email" size="40" required>
+            (*)
+            <br>
+            <label for="txtMessage">your message: </label><br>
+            <textarea id="txtMessage" name="message" rows="6" cols="40" required></textarea> (*)
+            <br>
+            (*) required
+            <br>
+            <br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clear">
+        </form>
+    </fieldset>
+    </article>   
+    </main>
+    <footer>
+    <br>
+    <a href="./index.html">back</a>
+</footer>
+</body>
+</html>
