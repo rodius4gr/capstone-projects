@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Contact</title>
+    <title>My Resume</title>
     <link rel="stylesheet" href="./styles.css">
+
 </head>
 
 <body>
-        <header>
+
+    <header>
         <div class="header-content">
         <img src="./images/profile-pic.jpg" alt="Stelios Karagiannidis Photo">
         <div>
@@ -18,31 +20,81 @@
         </div>
         </div>
     </header>
-
     <main>
-        <article>
-            <fieldset>
-                <legend>Contact form</legend>
-                <form action="/sendData" method="GET">
-                    <label for="txtName">Full Name:</label>
-                    <input type="text" id="txtName" name="name" minlength="3" maxlength="40" size="40" required>
-                    (*)
-                    <br>
-                    <label for="txtEmail">E-mail: </label>
-                    <input type="email" id="txtEmail" name="email" size="40" required>
-                    (*)
-                    <br>
-                    <label for="txtMessage">your message: </label><br>
-                    <textarea id="txtMessage" name="message" rows="6" cols="40" required></textarea> (*)
-                    <br>
-                    (*) required
-                    <br>
-                    <br>
-                    <input type="submit" value="Send">
-                    <input type="reset" value="Clear">
-                </form>
-            </fieldset>
-        </article>
+
+        <section>
+            <h3>About Me</h3>
+            <p>
+                My name is <strong>Stelios Karagiannidis</strong>, and I have been working in the
+                law enforcement sector since 2002, after graduating from the Hellenic Police Academy.
+                In 2020, I earned my <strong>BSc in Computer Science</strong> from the
+                Hellenic Open University (HOU), and I am now building my career as a
+                <strong>Front-End Developer</strong>.
+            </p>
+            <p>
+                I’m currently focused on learning <strong>HTML</strong> and <strong>CSS</strong>,
+                with upcoming goals to expand into <strong>JavaScript</strong> and <strong>Python</strong>.
+                Between 2020 and 2024, I also worked on <strong>gaming-related projects</strong>,
+                managing small developer teams and improving user experience through technical updates.
+            </p>
+            <p>
+                I enjoy combining discipline, problem-solving, and creativity — skills I’ve developed
+                through both my professional experience and my studies in technology.
+            </p>
+        </section>
+
+        <section>
+            <h3>Education</h3>
+            <ul>
+                <li><strong>BSc in Computer Science</strong></li>
+                <li>Hellenic Open University (HOU), Greece</li>
+                <li>Graduated: 2020</li>
+            </ul>
+            <p>
+                The program covered a wide range of computer science topics, including software
+                development, algorithms, databases, artificial intelligence, computer networks,
+                and information systems — providing both theoretical and practical knowledge in computing.
+            </p>
+        </section>
+
+        <section>
+            <h3>Work Experience</h3>
+
+            <h4>Police Officer</h4>
+            <ul>
+                <li>Hellenic Police — 2002 – Present</li>
+                <li>
+                    Working in law enforcement since 2002, with experience in public safety,
+                    administration, and teamwork under demanding conditions.
+                </li>
+                <li>
+                    Developed strong communication, leadership, and decision-making skills
+                    while maintaining professionalism and integrity in all duties.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Skills</h3>
+            <ul>
+                <li><strong>Web Development:</strong> HTML, CSS (in progress), JavaScript (planned), Python (planned)
+                </li>
+                <li><strong>Project & Team Management:</strong> Staff coordination, task delegation, workflow
+                    organization</li>
+                <li><strong>Financial & Operational Management:</strong> Budgeting, resource allocation, project
+                    oversight</li>
+                <li><strong>Marketing & User Engagement:</strong> Promotion, content strategy, user communication</li>
+                <li><strong>Problem-Solving & Analytical Thinking:</strong> Developed through law enforcement and
+                    project management experience</li>
+                <li><strong>Communication & Leadership:</strong> Coordinating teams and stakeholders in high-pressure
+                    environments</li>
+                <li><strong>Collaboration:</strong> Experienced in working effectively with teams, coordinating tasks,
+                    and sharing knowledge to achieve project goals</li>
+                <li><strong>Continuous Learning:</strong> Enthusiastic about mastering new technologies and expanding
+                    technical knowledge</li>
+            </ul>
+        </section>
+
     </main>
     <footer>
         <div class="footer-content">
@@ -57,6 +109,7 @@
         </div>
         <p>© Stelios Karagiannidis. All rights reserved.</p>
     </footer>
+
 </body>
 
 </html>
