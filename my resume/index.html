@@ -5,146 +5,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Resume</title>
+
+    <style>
+        /* Border γύρω από το body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            border: 3px solid #004080;
+            padding: 0;
+            
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #004080;
+            color: white;
+            padding: 20px;
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+            border: 2px solid white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        header h2 {
+            margin: 0;
+            font-weight: normal;
+            font-size: 1.2em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: #004080;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        strong {
+            color: #0059b3;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #004080;
+            /* ίδιο χρώμα με header */
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-social img {
+            vertical-align: middle;
+        }
+
+        footer p {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #cccccc;
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <h1>Stelios Karagiannidis</h1>
-        <img src="./images/profile-pic.jpg" height="150" alt="profile-pic">
-        <hr>
+        <img src="./images/profile-pic.jpg" alt="Stelios Karagiannidis Photo">
+        <div>
+            <h1>Stelios Karagiannidis</h1>
+            <h2>Resume</h2>
+        </div>
     </header>
     <main>
-        <article>
+
+        <section>
+            <h3>About Me</h3>
+            <p>
+                My name is <strong>Stelios Karagiannidis</strong>, and I have been working in the
+                law enforcement sector since 2002, after graduating from the Hellenic Police Academy.
+                In 2020, I earned my <strong>BSc in Computer Science</strong> from the
+                Hellenic Open University (HOU), and I am now building my career as a
+                <strong>Front-End Developer</strong>.
+            </p>
+            <p>
+                I’m currently focused on learning <strong>HTML</strong> and <strong>CSS</strong>,
+                with upcoming goals to expand into <strong>JavaScript</strong> and <strong>Python</strong>.
+                Between 2020 and 2024, I also worked on <strong>gaming-related projects</strong>,
+                managing small developer teams and improving user experience through technical updates.
+            </p>
+            <p>
+                I enjoy combining discipline, problem-solving, and creativity — skills I’ve developed
+                through both my professional experience and my studies in technology.
+            </p>
+        </section>
+
+        <section>
+            <h3>Education</h3>
             <ul>
+                <li><strong>BSc in Computer Science</strong></li>
+                <li>Hellenic Open University (HOU), Greece</li>
+                <li>Graduated: 2020</li>
+            </ul>
+            <p>
+                The program covered a wide range of computer science topics, including software
+                development, algorithms, databases, artificial intelligence, computer networks,
+                and information systems — providing both theoretical and practical knowledge in computing.
+            </p>
+        </section>
+
+        <section>
+            <h3>Work Experience</h3>
+
+            <h4>Police Officer</h4>
+            <ul>
+                <li>Hellenic Police — 2002 – Present</li>
                 <li>
-                    <h2>Summary</h2>
-                    <p>I’m Stelios, a Computer Science graduate with a strong interest in web development. I have
-                        been working in law enforcement since 2002 until today. I also from 2020 to 2024 managed gaming
-                        projects, gaining
-                        experience in leadership, organization, and project management. Currently, I am learning HTML
-                        and
-                        CSS,
-                        with plans to expand into JavaScript and Python, creating functional and visually appealing web
-                        applications. My background has strengthened my discipline, problem-solving, and communication
-                        skills,
-                        which I now apply to my growing career in web development.</p>
+                    Working in law enforcement since 2002, with experience in public safety,
+                    administration, and teamwork under demanding conditions.
                 </li>
                 <li>
-                    <h2>Education</h2>
-                    <h4>BSc in Computer ScienceHellenic Open University (EAP), Greece, Graduated: 2020</h4>
-                    <ul>
-                        <li>
-                            <p>Gained a solid foundation in programming, computer networks, databases, and software
-                                systems.
-                            </p>
-                        </li>
-                        <li>
-                            <p>Developed analytical thinking and problem-solving skills through both theoretical and
-                                practical
-                                coursework.</p>
-                        </li>
-                        <li>
-                            <p>Built the basis for a career in web and software development.</p>
-                        </li>
-                    </ul>
-                      
-                    <a href="https://www.eap.gr/en/undergraduate/computer-science/">Hellenic Open Univercity</a>
-                </li>
-                <li>
-                    <h2>Work expirience</h2>
-                    <ul>
-                        <li>
-                            <h4>Law Enforcement Officer – Public Sector, Greece (2002 – Present)</h4>
-                            <ul>
-                                <li>
-                                    <p>Extensive experience in responsibility, teamwork, and problem-solving under
-                                        pressure.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>Developed communication, leadership, and organizational skills.</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h4>Manager – Gaming Projects (2020 – 2024)</h4>
-                            <ul>
-                                <li>
-                                    <p>Oversaw staff organization, financial management, project development, marketing,
-                                        and
-                                        user engagement.</p>
-                                </li>
-                                <li>
-                                    <p>Strengthened leadership, planning, and team coordination skills.</p>
-                                </li>
-                                <li>
-                                    <p>Gained experience in project lifecycle management and user-centered development.
-                                    </p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>
-                            Web Development: HTML, CSS (in progress), JavaScript (planned), Python (planned)
-                        </li>
-                        <li>
-                            Project & Team Management: Staff coordination, task delegation, workflow organization
-                        </li>
-                        <li>
-                            Financial & Operational Management: Budgeting, resource allocation, project oversight
-                        </li>
-                        <li>
-                            Marketing & User Engagement: Promotion, content strategy, user communication
-                        </li>
-                        <li>
-                            Problem-Solving & Analytical Thinking: Developed through law enforcement and project
-                            management
-                            experience
-                        </li>
-                        <li>
-                            Communication & Leadership: Coordinating teams and stakeholders in high-pressure
-                            environments
-                        </li>
-                        <li>
-                            Continuous Learning: Enthusiastic about mastering new technologies and expanding technical
-                            knowledge
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <h2>Portofolio</h2>
-                    <ol>
-                        <li>
-                            <a href="./portofolio/portofolio1.html">Portofolio work 1</a>
-                        </li>
-                        <li>
-                            <a href="./portofolio/portofolio2.html">Portofolio work 2</a>
-                        </li>
-                        <li>
-                            <a href="./portofolio/portofolio3.html">Portofolio work 3</a>
-                        </li>
-                        <li>
-                            <a href="./portofolio/portofolio4.html">Portofolio work 4</a>
-                        </li>
-                    </ol>
+                    Developed strong communication, leadership, and decision-making skills
+                    while maintaining professionalism and integrity in all duties.
                 </li>
             </ul>
-        </article>
-        <hr>
-        <main>
-            <footer>
-                <a href="./rate-page.html">Rate my work</a><br>
-                <a href="./contact.html">Contact form</a><br>
-                <a href="/index.html">Back to main menu</a><br>
-                <br>
-                <a href="#"><img src="images/LinkedIn_logo.png" height="35"></a>
-                <p>© Stelios Karagiannidis. All rights reserved.</p>
-            </footer>
+        </section>
+
+        <section>
+            <h3>Skills</h3>
+            <ul>
+                <li><strong>Web Development:</strong> HTML, CSS (in progress), JavaScript (planned), Python (planned)
+                </li>
+                <li><strong>Project & Team Management:</strong> Staff coordination, task delegation, workflow
+                    organization</li>
+                <li><strong>Financial & Operational Management:</strong> Budgeting, resource allocation, project
+                    oversight</li>
+                <li><strong>Marketing & User Engagement:</strong> Promotion, content strategy, user communication</li>
+                <li><strong>Problem-Solving & Analytical Thinking:</strong> Developed through law enforcement and
+                    project management experience</li>
+                <li><strong>Communication & Leadership:</strong> Coordinating teams and stakeholders in high-pressure
+                    environments</li>
+                <li><strong>Collaboration:</strong> Experienced in working effectively with teams, coordinating tasks,
+                    and sharing knowledge to achieve project goals</li>
+                <li><strong>Continuous Learning:</strong> Enthusiastic about mastering new technologies and expanding
+                    technical knowledge</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="./rate-page.html">Rate my work</a>
+                <a href="./contact.html">Contact form</a>
+                <a href="/index.html">Back to main menu</a>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="images/LinkedIn_logo.png" height="35" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <p>© Stelios Karagiannidis. All rights reserved.</p>
+    </footer>
+
 </body>
 
 </html>
