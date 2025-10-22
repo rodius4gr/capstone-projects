@@ -4,208 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
-
-    <style>
-        /* Border γύρω από το body */
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            border: 3px solid #004080;
-            padding: 0;
-            
-        }
-
-        /* Header */
-        header {
-            display: flex;
-            align-items: center;
-            background-color: #004080;
-            color: white;
-            padding: 20px;
-        }
-
-        header img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 20px;
-            object-fit: cover;
-            border: 2px solid white;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2em;
-        }
-
-        header h2 {
-            margin: 0;
-            font-weight: normal;
-            font-size: 1.2em;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        h3 {
-            color: #004080;
-            margin-bottom: 15px;
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        li {
-            margin-bottom: 5px;
-        }
-
-        strong {
-            color: #0059b3;
-        }
-
-        p {
-            margin-bottom: 15px;
-        }
-
-        footer {
-            background-color: #004080;
-            /* ίδιο χρώμα με header */
-            color: white;
-            padding: 15px 30px;
-            text-align: center;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .footer-links a {
-            color: white;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-
-        .footer-social img {
-            vertical-align: middle;
-        }
-
-        footer p {
-            margin-top: 10px;
-            font-size: 0.9em;
-            color: #cccccc;
-        }
-    </style>
+    <title>My Contact</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-
-    <header>
+        <header>
+        <div class="header-content">
         <img src="./images/profile-pic.jpg" alt="Stelios Karagiannidis Photo">
         <div>
             <h1>Stelios Karagiannidis</h1>
             <h2>Resume</h2>
         </div>
+        </div>
     </header>
+
     <main>
-
-        <section>
-            <h3>About Me</h3>
-            <p>
-                My name is <strong>Stelios Karagiannidis</strong>, and I have been working in the
-                law enforcement sector since 2002, after graduating from the Hellenic Police Academy.
-                In 2020, I earned my <strong>BSc in Computer Science</strong> from the
-                Hellenic Open University (HOU), and I am now building my career as a
-                <strong>Front-End Developer</strong>.
-            </p>
-            <p>
-                I’m currently focused on learning <strong>HTML</strong> and <strong>CSS</strong>,
-                with upcoming goals to expand into <strong>JavaScript</strong> and <strong>Python</strong>.
-                Between 2020 and 2024, I also worked on <strong>gaming-related projects</strong>,
-                managing small developer teams and improving user experience through technical updates.
-            </p>
-            <p>
-                I enjoy combining discipline, problem-solving, and creativity — skills I’ve developed
-                through both my professional experience and my studies in technology.
-            </p>
-        </section>
-
-        <section>
-            <h3>Education</h3>
-            <ul>
-                <li><strong>BSc in Computer Science</strong></li>
-                <li>Hellenic Open University (HOU), Greece</li>
-                <li>Graduated: 2020</li>
-            </ul>
-            <p>
-                The program covered a wide range of computer science topics, including software
-                development, algorithms, databases, artificial intelligence, computer networks,
-                and information systems — providing both theoretical and practical knowledge in computing.
-            </p>
-        </section>
-
-        <section>
-            <h3>Work Experience</h3>
-
-            <h4>Police Officer</h4>
-            <ul>
-                <li>Hellenic Police — 2002 – Present</li>
-                <li>
-                    Working in law enforcement since 2002, with experience in public safety,
-                    administration, and teamwork under demanding conditions.
-                </li>
-                <li>
-                    Developed strong communication, leadership, and decision-making skills
-                    while maintaining professionalism and integrity in all duties.
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h3>Skills</h3>
-            <ul>
-                <li><strong>Web Development:</strong> HTML, CSS (in progress), JavaScript (planned), Python (planned)
-                </li>
-                <li><strong>Project & Team Management:</strong> Staff coordination, task delegation, workflow
-                    organization</li>
-                <li><strong>Financial & Operational Management:</strong> Budgeting, resource allocation, project
-                    oversight</li>
-                <li><strong>Marketing & User Engagement:</strong> Promotion, content strategy, user communication</li>
-                <li><strong>Problem-Solving & Analytical Thinking:</strong> Developed through law enforcement and
-                    project management experience</li>
-                <li><strong>Communication & Leadership:</strong> Coordinating teams and stakeholders in high-pressure
-                    environments</li>
-                <li><strong>Collaboration:</strong> Experienced in working effectively with teams, coordinating tasks,
-                    and sharing knowledge to achieve project goals</li>
-                <li><strong>Continuous Learning:</strong> Enthusiastic about mastering new technologies and expanding
-                    technical knowledge</li>
-            </ul>
-        </section>
-
+        <article>
+            <fieldset>
+                <legend>Contact form</legend>
+                <form action="/sendData" method="GET">
+                    <label for="txtName">Full Name:</label>
+                    <input type="text" id="txtName" name="name" minlength="3" maxlength="40" size="40" required>
+                    (*)
+                    <br>
+                    <label for="txtEmail">E-mail: </label>
+                    <input type="email" id="txtEmail" name="email" size="40" required>
+                    (*)
+                    <br>
+                    <label for="txtMessage">your message: </label><br>
+                    <textarea id="txtMessage" name="message" rows="6" cols="40" required></textarea> (*)
+                    <br>
+                    (*) required
+                    <br>
+                    <br>
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Clear">
+                </form>
+            </fieldset>
+        </article>
     </main>
     <footer>
         <div class="footer-content">
@@ -220,7 +57,6 @@
         </div>
         <p>© Stelios Karagiannidis. All rights reserved.</p>
     </footer>
-
 </body>
 
 </html>
